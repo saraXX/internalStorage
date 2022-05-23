@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:padding="20dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -30,7 +29,6 @@
         android:id="@+id/cTextBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
         android:scrollbars="vertical" />
 
     <LinearLayout
@@ -38,42 +36,36 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="horizontal">
-
         <Button
+            android:layout_marginHorizontal="10dp"
             android:id="@+id/nSaveBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:background="#8BC34A"
+            android:background="@color/green"
             android:text="normal save" />
-
         <Button
-            android:id="@+id/cSaveBtn"
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/nDeleteBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:background="#FFC107"
-            android:text="cache save" />
+            android:background="@color/red"
+            android:text="delete file" />
     </LinearLayout>
-
-
     <Button
         android:id="@+id/showBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:text="show all files in internal storage" />
     <Button
         android:id="@+id/openBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:text="open file by file name" />
 
     <EditText
         android:id="@+id/shTextBox"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:scrollbars="vertical"
         android:gravity="start|top"
